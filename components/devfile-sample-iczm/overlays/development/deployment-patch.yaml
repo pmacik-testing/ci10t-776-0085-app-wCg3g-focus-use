@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-iczm
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0085-tenant/ci10t-776-0085-app/devfile-sample-iczm@sha256:671a7c5d9f2f273660b28bccd5ace14187e1881366993d437b87d4ccc49f3d28
+        name: my-nodejs
+        resources: {}
+status: {}
